@@ -4,7 +4,8 @@ const cp = require('child_process');
 const KEYWORDS = [
     "target", "use", "as", "router", "auth", "authenticate", "authenticated", "public", 
     "include", "query", "header", "body", "any", "string", "float", "int", "boolean", 
-    "datetime", "time", "date", "GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS"
+    "datetime", "time", "date", "GET", "POST", "PUT", "DELETE", "PATCH", "HEAD", "OPTIONS",
+    "API-Key", "Bearer"
 ];
 
 function activate(context) {

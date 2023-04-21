@@ -4,6 +4,7 @@
   "description": "Adds YmirScript language support",
   "version": "0.0.1",
   "main": "./extension.js",
+  "icon": "https://avatars.githubusercontent.com/u/130397839?s=200&v=4",
   "engines": {
     "vscode": "^1.77.0"
   },
