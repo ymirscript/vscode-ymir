@@ -1,0 +1,44 @@
+{
+  "name": "ymirscript",
+  "displayName": "YmirScript",
+  "description": "Adds YmirScript language support",
+  "version": "0.0.1",
+  "main": "./extension.js",
+  "engines": {
+    "vscode": "^1.77.0"
+  },
+  "categories": [
+    "Programming Languages"
+  ],
+  "activationEvents": [
+    "onLanguage:ymirscript"
+  ],
+  "contributes": {
+    "languages": [{
+      "id": "ymirscript",
+      "aliases": ["YmirScript", "ymirscript"],
+      "extensions": [".ymr"],
+      "configuration": "./language-configuration.json"
+    }],
+    "grammars": [{
+      "language": "ymirscript",
+      "scopeName": "source.ymir",
+      "path": "./syntaxes/ymirscript.tmLanguage.json"
+    }],
+    "snippets": [
+      {
+        "language": "ymirscript",
+        "path": "./snippets.json"
+      }
+    ],
+    "commands": [
+      {
+        "command": "ymirscript.compile",
+        "title": "YmirScript: Compile"
+      }
+    ]
+  },
+  "devDependencies": {
+		"@types/vscode": "^1.73.0"
+  }
+}
