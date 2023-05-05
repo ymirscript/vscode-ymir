@@ -1,7 +1,7 @@
 {
-	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
-	"name": "YmirScript",
-	"patterns": [
+    "$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+    "name": "YmirScript",
+    "patterns": [
         {
             "include": "#keywords"
         },
@@ -13,9 +13,12 @@
         },
         {
             "include": "#punctuation"
+        },
+        {
+            "include": "#comments"
         }
     ],
-	"repository": {
+    "repository": {
         "keywords": {
             "patterns": [
                 {
@@ -80,7 +83,15 @@
                     "match": "\\(|\\)|\\[|\\]|\\{|\\}|,|:|;|\\.|@|/|\\?|=|&"
                 }
             ]
+        },
+        "comments": {
+            "patterns": [
+                {
+                    "name": "comment.line.double-slash.ymirscript",
+                    "match": "//.*"
+                }
+            ]
         }
     },
-	"scopeName": "source.ymir"
+    "scopeName": "source.ymir"
 }
