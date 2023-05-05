@@ -2,7 +2,7 @@
   "name": "ymirscript",
   "displayName": "YmirScript",
   "description": "Adds YmirScript language support",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "main": "./extension.js",
   "icon": "./ymiricon.png",
   "publisher": "YmirScript",
