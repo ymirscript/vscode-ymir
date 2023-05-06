@@ -3,6 +3,9 @@
     "name": "YmirScript",
     "patterns": [
         {
+            "include": "#comments"
+        },
+        {
             "include": "#keywords"
         },
         {
@@ -13,9 +16,6 @@
         },
         {
             "include": "#punctuation"
-        },
-        {
-            "include": "#comments"
         }
     ],
     "repository": {
